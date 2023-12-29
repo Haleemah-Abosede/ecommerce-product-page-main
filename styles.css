@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 3em;
+  align-items: center;
+  padding: 1em 4em;
+}
+header nav {
+  justify-self: center;
+}
+header nav .menu {
+  display: none;
+}
+header nav .navlist {
+  display: flex;
+  gap: 1.4em;
+}
+header nav .navlist a {
+  text-decoration: none;
+}
+header .cart-profile {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3em;
+}
+header .cart-profile .profile {
+  width: 30%;
+}
+header .cart-profile .profile img {
+  width: 100%;
+}
+
+hr {
+  background-color: hsl(220, 14%, 75%);
+  margin: 0.3em 4em;
+}
+
+main {
+  display: flex;
+  gap: 2em;
+  margin: 2em 4em 0;
+  justify-content: center;
+  align-items: center;
+}
+main .info .comp {
+  color: hsl(26, 100%, 55%);
+  text-transform: uppercase;
+  line-height: 120%;
+  margin-bottom: 1.2em;
+}
+main .info .edition {
+  color: hsl(0, 0%, 0%);
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 110%;
+}
+main .info .gray-info {
+  color: hsl(220, 14%, 75%);
+  margin: 1.5em 0;
+  font-size: 1em;
+}
+main .info .price .sale {
+  color: hsl(0, 0%, 0%);
+  font-size: 1.8em;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+main .info .price .sale span#off {
+  color: hsl(26, 100%, 55%);
+  font-size: 16px;
+  background-color: hsl(25, 100%, 94%);
+  padding: 0.3em;
+  border-radius: 0.4em;
+}
+main .info .price .cut {
+  color: hsl(220, 14%, 75%);
+  text-decoration: line-through;
+}
+main .info .add-to {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+main .info .add-to .number {
+  display: flex;
+  background-color: hsl(223, 64%, 98%);
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 0.4em 1em;
+  border-radius: 0.3em;
+}
+main .info .add-to .button {
+  padding: 0.4em 1em;
+  border-radius: 0.3em;
+  background-color: hsl(26, 100%, 55%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */

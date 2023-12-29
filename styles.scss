@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "header";
+
+main {
+  display: flex;
+  gap: 2em;
+  margin: 2em 4em 0;
+  justify-content: center;
+  align-items: center;
+
+  .info {
+    .comp {
+      color: $Orange;
+      text-transform: uppercase;
+      line-height: 120%;
+      margin-bottom: 1.2em;
+    }
+    .edition {
+      color: $Black;
+      font-size: 4em;
+      font-weight: 700;
+      line-height: 110%;
+    }
+    .gray-info {
+      color: $Grayish-blue;
+      margin: 1.5em 0;
+      font-size: 1em;
+    }
+    .price {
+      .sale {
+        color: $Black;
+        font-size: 1.8em;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        span#off {
+          color: $Orange;
+          font-size: 16px;
+          background-color: $Pale-orange;
+          padding: 0.3em;
+          border-radius: 0.4em;
+        }
+      }
+
+      .cut {
+        color: $Grayish-blue;
+        text-decoration: line-through;
+      }
+    }
+
+    .add-to {
+      display: flex;
+      gap: 1em;
+      margin-top: 1em;
+
+      .number {
+        display: flex;
+        background-color: $Light-grayish-blue;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        padding: 0.4em 1em;
+        border-radius: 0.3em;
+      }
+
+      .button {
+        padding: 0.4em 1em;
+        border-radius: 0.3em;
+        background-color: $Orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        color: $White;
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
