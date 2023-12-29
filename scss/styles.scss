@@ -15,6 +15,26 @@ main {
   justify-content: center;
   align-items: center;
 
+  .products {
+    .prod-display {
+      margin-bottom: 1em;
+      width: 100%;
+      img {
+        border-radius: 1em;
+        width: 90%;
+      }
+    }
+    .prods {
+      display: flex;
+      gap: 2em;
+
+      img {
+        border-radius: 1em;
+        width: 19%;
+      }
+    }
+  }
+
   .info {
     .comp {
       color: $Orange;
@@ -86,13 +106,90 @@ main {
   }
 }
 
+.pop-up {
+  background-color: $Dark-grayish-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3em;
+
+  .pop-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+
+    .pop-close {
+      background-color: $Orange;
+      padding: 1em;
+      width: 3em;
+      height: 3em;
+      border-radius: 50%;
+      align-self: flex-end;
+    }
+    .prod-switch {
+      display: flex;
+      align-items: center;
+      .switch {
+        background-color: $White;
+        width: 4em;
+        height: 4em;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+
+        img {
+          width: 50%;
+        }
+      }
+      .left {
+        left: -2%;
+      }
+      .right {
+        right: -2%;
+      }
+
+      .pop-display {
+        margin-bottom: 1em;
+        width: 100%;
+
+        img {
+          border-radius: 1em;
+          width: 100%;
+        }
+      }
+    }
+    .prods {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+
+      img {
+        border-radius: 1em;
+        width: 19%;
+      }
+    }
+  }
+}
+
+.active {
+  border: 3px solid $Orange;
+  background-color: $Light-grayish-blue;
+  filter: blur(50%) brightness(0);
+}
+
 footer {
   position: fixed;
-  bottom: 5%;
+  bottom: 0%;
+  padding: 1em;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $White;
   .attribution {
     font-size: 11px;
     text-align: center;

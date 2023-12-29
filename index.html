@@ -10,7 +10,7 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | E-commerce product page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./scss/styles.css" />
   </head>
   <body>
     <header>
@@ -41,12 +41,30 @@
     <hr />
     <main>
       <section class="products">
-        <div class="prod-display"></div>
+        <div class="prod-display">
+          <img src="./images/image-product-1.jpg" alt="" />
+        </div>
         <div class="prods">
-          <img src="./images/image-product-1-thumbnail.jpg" alt="" />
-          <img src="./images/image-product-2-thumbnail.jpg" alt="" />
-          <img src="./images/image-product-3-thumbnail.jpg" alt="" />
-          <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+          <img
+            src="./images/image-product-1-thumbnail.jpg"
+            alt=""
+            onclick="changeImage('imageOne')"
+          />
+          <img
+            src="./images/image-product-2-thumbnail.jpg"
+            alt=""
+            onclick="changeImage('imageTwo')"
+          />
+          <img
+            src="./images/image-product-3-thumbnail.jpg"
+            alt=""
+            onclick="changeImage('imageThree')"
+          />
+          <img
+            src="./images/image-product-4-thumbnail.jpg"
+            alt=""
+            onclick="changeImage('imageFour')"
+          />
         </div>
       </section>
       <section class="info">
@@ -75,10 +93,49 @@
             <img src="./images/icon-cart.svg" alt="" /> Add to cart
           </div>
         </div>
-        <img src="./images/icon-previous.svg" alt="" />
-        <img src="./images/icon-next.svg" alt="" />
       </section>
     </main>
+
+    <section class="pop-up">
+      <div class="pop-container">
+        <div class="pop-close">
+          <img src="./images/icon-close.svg" alt="" />
+        </div>
+        <div class="prod-switch">
+          <div class="switch left">
+            <img src="./images/icon-previous.svg" alt="" />
+          </div>
+          <div class="pop-display">
+            <img src="./images/image-product-1.jpg" alt="" />
+          </div>
+          <div class="switch right">
+            <img src="./images/icon-next.svg" alt="" />
+          </div>
+        </div>
+        <div class="prods">
+          <img
+            src="./images/image-product-1-thumbnail.jpg"
+            alt=""
+            onclick="changeImage('imageOne')"
+          />
+          <img
+            src="./images/image-product-2-thumbnail.jpg"
+            alt=""
+            onclick="changeImage('imageTwo')"
+          />
+          <img
+            src="./images/image-product-3-thumbnail.jpg"
+            alt=""
+            onclick="changeImage('imageThree')"
+          />
+          <img
+            src="./images/image-product-4-thumbnail.jpg"
+            alt=""
+            onclick="changeImage('imageFour')"
+          />
+        </div>
+      </div>
+    </section>
 
     <footer class="attribution">
       Challenge by
@@ -86,5 +143,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Harbohsedey</a>.
     </footer>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
