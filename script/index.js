@@ -4,12 +4,6 @@ let imageBg = document.querySelector(".prod-display img");
 //for pop-up
 let popBg = document.querySelector(".pop-display img");
 function changeImage(imageChoice) {
-  //   let thumbnails = document.querySelectorAll(".prods img");
-  //   thumbnails.forEach((thumbnail) => {
-  //     thumbnail.addEventListener("click", () => {
-  //       thumbnail.classList.toggle("active");
-  //     });
-  //   });
   image = imageChoice;
 
   if (image == "imageOne") {
@@ -26,3 +20,14 @@ function changeImage(imageChoice) {
     popBg.src = "./images/image-product-4.jpg";
   }
 }
+
+//displaying pop-up
+const popUp = document.querySelector(".pop-up");
+imageBg.addEventListener("click", () => {
+  popUp.style.display = "flex";
+});
+
+const popClose = document.querySelector(".pop-close");
+popClose.addEventListener("click", () => {
+  popUp.style.display = "none";
+});
