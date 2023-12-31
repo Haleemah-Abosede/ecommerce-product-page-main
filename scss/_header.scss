@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800&display=swap");
+
 @import "color";
 @import "mediaqueries";
+
+$font-family: "Kumbh Sans", sans-serif;
 
 header {
   display: grid;
@@ -7,6 +11,7 @@ header {
   gap: 3em;
   align-items: center;
   padding: 1em 6em;
+  font-family: $font-family;
 
   nav {
     justify-self: center;

@@ -9,11 +9,11 @@
 @import "header";
 body {
   position: relative;
-  max-height: 100svh;
+  font-family: $font-family;
 }
 main {
   display: flex;
-  // gap: 2em;
+  gap: 2em;
   margin: 4em 6em 1em;
   justify-content: center;
   align-items: center;

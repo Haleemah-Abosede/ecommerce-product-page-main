@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800&display=swap");
 *,
 *::after,
 *::before {
@@ -12,6 +13,7 @@ header {
   gap: 3em;
   align-items: center;
   padding: 1em 6em;
+  font-family: "Kumbh Sans", sans-serif;
 }
 header nav {
   justify-self: center;
@@ -47,11 +49,12 @@ hr {
 
 body {
   position: relative;
-  max-height: 100svh;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 main {
   display: flex;
+  gap: 2em;
   margin: 4em 6em 1em;
   justify-content: center;
   align-items: center;
